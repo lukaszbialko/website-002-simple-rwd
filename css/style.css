@@ -9,10 +9,12 @@ body {
 	background-color: #222;
 }
 
+/* nav  */
+
 nav {
     height: 70px;
     line-height: 70px;
-    background-color: #cacaca;
+    background-color: #293558;
     text-align: center;
 }
 
@@ -31,6 +33,7 @@ nav {
     background: none;
     border: none;
     cursor: pointer;
+    color: #00c3ff;
 }
 
 .nav-items {
@@ -38,9 +41,45 @@ nav {
     font-size: 0;
 }
 
+/* header  */
+
+.header {
+    position: relative;
+    height: 400px;
+    background-image: url('../img/fortnite-4129124_640.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 53, 88, 0.4);
+}
+
+.hero-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    color: #d0ff00;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #000000;
+}
+
+.hero-text span {
+    color: rgb(255, 0, 0);
+}
+
 
 
 @media (min-width: 768px) {
+    /* nav  */
     .nav-items {
         display: block;
     }
@@ -53,7 +92,7 @@ nav {
         padding: 10px;
         margin: 0 30px;
         font-size: 16px;
-        color: #222;
+        color: #00c3ff;
         transition: color .3s;
     }
     
@@ -64,4 +103,6 @@ nav {
     .burger-icon {
         display: none;
     }
+
+    /* hedaer  */
 }
